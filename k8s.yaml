@@ -86,7 +86,7 @@ items:
         name: nodejs-app
       spec:
         containers:
-        - image: "ijason/nodejs-sample:latest"
+        - image: "anilsenapati94/nodejs-sample"
           name: web
           ports:
           - containerPort: 3000
@@ -126,7 +126,6 @@ items:
       kubernetes.io/ingress.class: "nginx"
   spec:
     rules:
-    - host: nodejs.192.168.99.100.nip.io
       http:
         paths:
         - path: /
