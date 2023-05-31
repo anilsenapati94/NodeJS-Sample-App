@@ -1,6 +1,6 @@
 FROM node:0.10.40
 
-RUN install npm
+RUN npm install
 
 COPY ./EmployeeDB /app
 
