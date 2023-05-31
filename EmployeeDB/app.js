@@ -2,6 +2,7 @@
  * Module dependencies.
  */
 
+
 var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
@@ -18,7 +19,7 @@ app.configure(function(){
   app.set('view engine', 'jade');
   app.set('view options', {layout: false});
   app.use(express.favicon());
-  app.use(express.logger('dev'));
+  app.use(express.logger('dev'))
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
